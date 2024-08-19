@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_primary"
+    android:padding="40dp"
+    tools:context=".WelcomeActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/flashfeed_logo"
+        android:id="@+id/logoView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoView"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="false"
+        android:text="Welcome to FlashFeed.\n\nAll the trusted news you're used to.\n\nScroll now for discover more."
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fenwick_normal"
+        android:id="@+id/mainText"/>
+    
+        
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainText"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#fa0d34"
+        android:fontFamily="@font/fenwick_normal"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:id="@+id/loginButton"/>
+    
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white"
+        android:text="Register"
+        android:textColor="@color/my_secondary"
+        android:textSize="16sp"
+        android:fontFamily="@font/fenwick_normal"
+        android:id="@+id/registerButton"/>
+
+
+
+
+
+</RelativeLayout>

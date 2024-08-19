@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="40dp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp"
+    android:src="@drawable/flashfeed_logo"
+    android:id="@+id/flashfeed_logo"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flashfeed_logo"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="false"
+        android:text="Login to FlashFeed"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/fenwick_light"
+        android:id="@+id/loginText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginText"
+        android:layout_marginTop="20dp"
+        android:hint="Your Email Adress"
+        android:textSize="13sp"
+        android:textColorHint="@color/white"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/fenwick_light"
+        android:id="@+id/mailEditText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mailEditText"
+        android:layout_marginTop="20dp"
+        android:hint="Your Password"
+        android:textSize="13sp"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/fenwick_light"
+        android:id="@+id/passwordEditText"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/my_secondary"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/fenwick_light"
+        android:id="@+id/loginButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="Don't have an account? Register Now"
+        android:fontFamily="@font/fenwick_normal"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        android:id="@+id/registerHint"/>
+
+
+
+    
+    
+
+</RelativeLayout>
